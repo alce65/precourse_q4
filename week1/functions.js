@@ -28,4 +28,6 @@ const x = foo();
 bar();
 arrow();
 console.log("Esto es x, fuera de foo:", x);
-console.log("Add", add(5, 6));
+console.log("Add vacío", add());
+console.log("Add 4", add(4));
+console.log("Add 5 y 6", add(5, 6));
