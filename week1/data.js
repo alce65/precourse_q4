@@ -1,12 +1,12 @@
-console.log("Tipos primitivos");
-console.log("Alfredo 😍", typeof "Alfredo 😍");
+console.log('Tipos primitivos');
+console.log('Alfredo 😍', typeof 'Alfredo 😍');
 console.log(29, typeof 29);
 console.log(true, typeof true);
 console.log(undefined, typeof undefined);
-console.log(null, typeof null, "mentira, es null");
+console.log(null, typeof null, 'mentira, es null');
 console.log(29n, typeof 29n);
-console.log(Symbol(""), typeof Symbol(""));
-console.log("Objetos");
+console.log(Symbol(''), typeof Symbol(''));
+console.log('Objetos');
 console.log({}, typeof {});
 console.log([], typeof []);
 console.log(() => {}, typeof (() => {}));
