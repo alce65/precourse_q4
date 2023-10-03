@@ -19,15 +19,78 @@
     <nav>
         <a href="index.html">Home</a>
     </nav>
-    <form>
+    <form class="user-form">
+        <fieldset>
+            <legend>User data</legend>
+            <div>
+                <label for="user-name">User Name</label>
+                <input type="text" name="userName" id="user-name" required placeholder="Dime tu nombre">
+            </div>
+            <div>
+                <label for="user-surname">SurName</label>
+                <input type="text" name="userSurname" id="user-surname" required>
+            </div>
+        </fieldset>
         <div>
-            <label for="user-name">User Name</label>
-            <input type="text" name="userName" id="user-name" required placeholder="Dime tu nombre">
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
         </div>
         <div>
-            <label for="user-surname">SurName</label>
-            <input type="text" name="userSurname" id="user-surname" required>
+            <fieldset>
+                <legend>Selecciona un turno</legend>
+                <label>
+                    <input type="radio" name="turn" value="M">
+                    Mañana
+                </label>
+                <input type="radio" name="turn" id="turn-2" value="T">
+                <label for="turn-2">Tarde</label>
+                <input type="radio" name="turn" id="turn-3" value="N">
+                <label for="turn-3">Noche</label>
+            </fieldset>
         </div>
+        <div>
+            <label for="course">Selecciona un curso</label>
+            <select name="course" id="course" multiple>
+                <option value=""></option>
+                <option value="ng-01">Angular</option>
+                <option value="rc-23">React</option>
+                <option value="nd-02">Node</option>
+            </select>
+        </div>
+
+        <!--    <input type="password" name="" id="" required minlength="4" maxlength="8">
+        <input type="email" name="" id="" required>
+            
+        <input type="number" name="" id="" max="5" min="2">
+        <input type="color" name="" id="">
+        <input type="date" name="" id="">
+        <input type="tel" name="" id="">
+        <input type="url" name="" id=""> -->
+
+        <div>
+            <input type="checkbox" name="isOk" id="is-ok">
+            <label for="is-ok">Estas de acuerdo con .... </label>
+        </div>
+
+        <fieldset>
+            <legend>Ingredientes</legend>
+            <label>
+                <input type="checkbox" name="piña">Piña
+            </label>
+            <label>
+                <input type="checkbox" name="peperoni">Peperoni
+            </label>
+            <label>
+                <input type="checkbox" name="bacon">Bacon
+            </label>
+        </fieldset>
+
+
+
+
+
+
+
         <button type="submit">Enviar</button>
     </form>
     <footer>
